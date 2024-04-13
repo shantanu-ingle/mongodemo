@@ -10,7 +10,7 @@ const userRouter = require('./routes/users/routes');
 require('dotenv').config();
 
 mongoose.connect(process.env.MDB_CONN_STR,{
-    dbName: 'honors' 
+    dbName: 'user_product' 
 });
 
 mongoose.connection.on('connected', () => console.log('Database connected!'));
